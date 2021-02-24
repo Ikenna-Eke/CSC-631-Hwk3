@@ -6,6 +6,7 @@ public class CamSwitch : MonoBehaviour
 {
     public GameObject mainCam; 
     public GameObject cam2;
+    public GameObject cam3;
     private int index = 0;
     // Start is called before the first frame update
     void Start()
