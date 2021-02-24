@@ -6,12 +6,11 @@ public class CamSwitch : MonoBehaviour
 {
     public GameObject mainCam; 
     public GameObject cam2;
-    public GameObject cam3;
     private int index = 0;
     // Start is called before the first frame update
     void Start()
     {
-       mainCam.SetActive(true);
+        mainCam.SetActive(true);
        cam2.SetActive(false);
     }
 
@@ -20,16 +19,18 @@ public class CamSwitch : MonoBehaviour
     {   
         if(Input.GetKeyDown("c")){
             index++;
-            index = index%2;
-            if(index==0){
+            index = index%3;
+            if (index == 0)
+            {
                 mainCam.SetActive(true);
                 cam2.SetActive(false);
             }
-            else{
+            else { 
                 cam2.SetActive(true);
                 mainCam.SetActive(false);
-                //cam2.SetActive(true);
-            }
+
+            } 
+            
         }
     }
 }

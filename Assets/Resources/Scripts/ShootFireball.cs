@@ -16,7 +16,7 @@ public class ShootFireball : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(1))
         {
             StartCoroutine(ShootFireballMethod());
         }
